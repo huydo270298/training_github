@@ -1,15 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>NHN Entertainment</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"/>
 </head>
+<body class="page">
+<!-- wrap -->
+<div id="wrap" class="wrap">
+	<!-- header -->
+	<header id="header" class="header">
+		<div class="header_inner">
+            <div class="header_noti">
+                <span class="header_noti_l">[공지] <span class="noti_l_sub">[SDK] AOS SDK v1.5.4, iOS SDK v1.4.3 업데이트 내역 안내</span></span>
+                <div class="header_noti_r">
+                    <div class="email_angle_down">payco@payco.com</div>
+                    <span class="bar_header"></span>
+                    <a href="#none" class="btn_logout">로그아웃</a>
+                </div>
+            </div>
+			<div class="header_nav">
+                <h1 class="payco"><a href="#" class="payco_link"><span class="txt">PAYCO 개발자센터</span></a></h1>
+                <ul class="global_nav_lst">
+                    <li class="nav_item"><a href="#" class="nav_link">소개</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">개발가이드</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">애플리케이션</a></li>
+                    <li class="nav_item"><a href="#" class="nav_link">고객지원</a></li>
+                </ul>
+            </div>
+            <div class="pop_prof">
+                <div class="pop_prof_inner">
+                    <div class="tit_pop">내 애플리케이션</div>
+                    <ul class="lst_app">
+                        <li class="item_app">티모니</li>
+                        <li class="item_app">앱이름 노출됩니다.</li>
+                        <li class="item_app">1400A </li>
+                    </ul>
+                    <a href="#none" class="btn_app_regi">애플리케이션 등록</a>
+                </div>
+            </div>
+		</div>
+	</header>
+	<!-- //header -->
+     
+	<!-- container -->
+	<main id="container" role="main">
+		<div class="top_main">
+            <div class="lst_slide">
+                <div class="item_slide">
+                    <h2 class="title_slide"><span class="txt">PAYCO 로그인</span></h2>
+                    <div class="note_slide">PAYCO 아이디만 있으면 간편하게 로그인!<br>1,000만 PAYCO 회원을 여러분의 서비스 고객으로 만들어 보세요</div>
+                    <button type="button" class="btn_see_more">자세히 보기</button>
+                    <img src="./img/slider1.png" alt="" class="img_noti">
+                </div>
+                <div class="item_slide">
+                    <h2 class="title_slide sign_up"><span class="txt">PAYCO 바로가입</span></h2>
+                    <div class="note_slide">약관동의부터 회원가입에 필요한 정보 제공까지 한번에!<br>복잡하고 번거로운 회원가입, PAYCO 바로가입으로 간편해집니다.</div>
+                    <div class="email">
+                        <span class="request">제휴 문의</span>
+                        <span class="add_email">dl_payco_id_dev@nhn.com</span>
+                    </div>
+                    <button type="button" class="btn_see_more">자세히 보기</button>
+                    <img src="./img/slider2.png" alt="" class="img_noti">
+                </div>
+             </div>
+           <!-- <div class="slider_nav">
+               <div class="btn_on is_on">1</div>
+               <div class="btn_on">2</div>
+           </div> -->
+		</div>
 
-<body>
+        <div class="noti_pop">
+            <div class="noti_pop_inner">
+                <div class="noti">PAYCO 아이디를 쉽고 빠르게 적용할 수 있도록 플랫폼 별 SDK와 API를 제공합니다.<br>지금 바로 시작하세요!</div>
+                <a href="#none" class="btn_start_dev">개발 시작하기</a>
+            </div>
+        </div>
+		<div class="sub_main">
+            <div class="sub_main_inner">
+                <ul class="serv_lst">
+                    <li class="serv_item">
+                        <span class="sp ico_img ico1"></span>
+                        <div class="serv_tit">NHN Cloud</div>
+                        <div class="serv_dsc">복잡한 인프라와 플랫폼 개발, 운영 업무는 <br>NHN Cloud에 맡기고 <br>콘텐츠 개발에만 집중하세요.</div>
+                        <div class="serv_link">
+                            <a href="#none" class="see_more">자세히 보기</a>
+                        </div>
+                    </li>
+                    <li class="serv_item">
+                        <span class="sp ico_img ico2"></span>
+                        <div class="serv_tit">PAYCO 결제 서비스</div>
+                        <div class="serv_dsc">매출은 늘리고 관리는 간편하게! <br>온라인, 오프라인 다양한 맞춤형 결제 방식을 <br>제공합니다.</div>
+                        <div class="serv_link">
+                            <a href="#none" class="see_more">자세히 보기</a>
+                        </div>
+                    </li>
+                    <li class="serv_item">
+                        <span class="sp ico_img ico3"></span>
+                        <div class="serv_tit">PAYCO 인증서</div>
+                        <div class="serv_dsc">인증은 간편하게, 보안은 완벽하게! <br>PAYCO 인증서에서 만나보세요.</div>
+                        <div class="serv_link">
+                            <a href="#none" class="see_more">자세히 보기</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="serv_menu">
+                    <ul class="menu_lst">
+                        <li class="lst_item">
+                            <div class="item_tit">소개</div>
+                            <ul class="options">
+                                <li><a href="#none">PAYCO 로그인</a></li>
+                                <li><a href="#none">PAYCO 바로가입<span class="sp ico_new">NEW</span></a></li>
+                            </ul>
+                            <span class="bor_r"></span>
+                        </li>
+                        <li class="lst_item">
+                            <div class="item_tit">가이드</div>
+                            <ul class="options">
+                                <li><a href="#none">시작하기</a></li>
+                                <li><a href="#none">PAYCO 로그인</a></li>
+                                <li><a href="#none">PAYCO 바로가입<span class="sp ico_new">NEW</span></a></li>
+                                <li><a href="#none">이미지 리소스</a></li>
+                                <li><a href="#none">SDK 다운로드</a></li>
+                            </ul>
+                            <span class="bor_r"></span>
+                        </li>
+                        <li class="lst_item">
+                            <div class="item_tit">애플리케이션 관리</div>
+                            <ul class="options">
+                                <li><a href="#none">애플리케이션 등록</a></li>
+                                <li><a href="#none">애플리케이션 설정</a></li>
+                            </ul>
+                            <span class="bor_r"></span>
+                        </li>
+                        <li class="lst_item">
+                            <div class="item_tit">고객지원</div>
+                            <ul class="options">
+                                <li><a href="#none">공지사항</a></li>
+                                <li><a href="#none">FAQ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</main>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer id="footer" class="footer" role="contentinfo">
+		<div class="footer_inner">
+            <div class="footer_txt">
+                <div class="footer_lef">
+                    <a href="#" class="sp bot_logo">NHN PAYCO</a>
+                </div>
+                <div class="footer_rig">
+                    <h2 class="blind">footer navigation</h2>
+                    <ul class="legal_lst">
+                    <li class="legal_item"><a href="#">회사소개</a><span class="bar"></span></li>
+                    <li class="legal_item"><a href="#">개발자센터 이용약관</a><span class="bar"></span></li>
+                    <li class="legal_item"><a href="#">개인정보취급방침</a></li>
+                    </ul>
+                    <dl class="contact_footer_info">
+                        <dt class="contact_term">대표이사 :</dt>
+                        <dd class="contact_val">정연훈</dd>
+                        <dt class="contact_term">주소 :</dt>
+                        <dd class="contact_val">경기도 성남시 분당구 대왕판교로 645번길 16, 플레이뮤지엄</dd>
+                    </dl>
+                    <p class="copyright">Copyright &copy; NHN PAYCO Corp. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="footer_btn">
+                <div class="custom-select-wrapper">
+                    <select name="sources" id="sources" class="custom-select sources" placeholder="Source Type">
+                      <option value="profile">Profile</option>
+                      <option value="word">Word</option>
+                      <option value="hashtag">Hashtag</option>
+                    </select>
+                    <div class="custom-select sources">
+                      <span class="custom-select-trigger">FAMILY SITE</span>
+                      <div class="custom-options">
+                        <span class="custom-option undefined" data-value="family">FAMILY SITE</span>
+                        <span class="custom-option undefined" data-value="word">FAMILY SITE2</span>
+                        <span class="custom-option undefined" data-value="hashtag">FAMILY SITE3</span>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+		</div>
+	</footer>
+	<!-- //footer -->
 
+    <div class="line"></div>
+</div>
+<!-- //wrap -->
+<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+    $('.lst_slide').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        variableWidth: false,
+        /* autoplay: true, */
+        autoplaySpeed: 5000,
+        nextArrow: 'none',
+        prevArrow: 'none',
+    });
+    $('.email_angle_down').click(function() {
+        $('.pop_prof').toggle();
+    })
+    $(".custom-select-wrapper").on('click',function () {
+        $('.custom-select').toggleClass('opened');
+        $('.custom-options').slideToggle(200);
+    })
+    $(".custom-option").on("click", function() {
+        var a= $(this).data("value")
+        console.log(a);
+        $(this).parents(".custom-select-wrapper").find("select").val($(this).data("value"));
+        $(this).parents(".custom-select").find(".custom-select-trigger").text($(this).text()); 
+    });
+</script>
 </body>
-
 </html>
